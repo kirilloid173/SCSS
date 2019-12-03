@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
+
+    $('#slider4').on('slide.bs.carousel', function () {
+      console.log('SLIDE!');
+    });
+
+    $('#slider4').on('slid.bs.carousel', function () {
+      console.log('SLID!');
+    });
+  </script>
+</head>
+<body>
+    <div class="container">
+       <div id="accordion">
+           <div class="card">
+               <div class="card-header">
+                   <h5>
+                       <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                           Formula 1
+                       </a>
+                   </h3>
+               </div>
+               <div id="collapse1" class="collapse show">
+                    Mercedes' revival of their Formula 1 tradition through the creation of a works team 
+                    for the 2010 championship was also the platform for a meteoric rise up the Grand Prix order. 
+                    Already the team had generated huge excitement by securing the sensational return of Michael Schumacher, 
+                    but headlines began to follow on track: three podiums came in their debut season, all via Nico Rosberg - who 
+                    then claimed a breakthrough pole/victory double at China in 2012. 
+                    The following season he would be paired with Lewis 
+                    Hamilton, with the duo going on to stage some epic title 
+                    battles as Mercedes swept all before them to become one of the most dominant forces of the modern F1 
+               </div>
+           </div>
+       </div>
+       <div id="accordion2">
+           <div class="card">
+               <div class="card-header">
+                   <h5>
+                       <a href="#collapse2" data-parent="accordion2" data-toggle="collapse">Formula 2</a>
+                   </h5>
+               </div>
+               <div id="collapse2" class="collapse show">
+                    F2 went into decline with the arrival of the 2.5 L F1 in 1954 (with small-capacity sports car racing becoming 
+                    particularly popular), but a new Formula Two was introduced for 1957, for 1.5 L cars. This became dominated by rear-
+                    engined Coopers drawing on their Formula 3 and 
+                    'Bobtail' sports car, with Porsches based on their RSK sports cars enjoying some success. Ferrari originally developed 
+                    their 'Sharknose' Dino 156 as a Formula Two car, while still racing front-engined Grand Prix cars. The dominant engine 
+                    of this formula was the Coventry Climax FPF four-cylinder, with the rare Borgward sixteen-valve unit enjoying some success.
+
+                    A slightly enlarged version of the F2 Cooper won the first two Formula One Grands Prix in 1958, marking the beginning of 
+                    the rear-engined era in Formula One. The 1.5 L formula was short-lived, with Formula Junior effectively replacing first Formula
+                     Three and then Formula Two until 1963—but the 1961 1.5 L Formula One was effectively a continuation of this Formula Two.
+               </div>
+           </div>
+       </div>
+       <br><br>
+       <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip On Top</button>
+    </div><!--container-->
+    
+    
+    <!--Row-->
+</body>
+</html>

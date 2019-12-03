@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <title>Second_bootstrap</title>
+</head>
+<body>
+    <div class="container">
+    <div class="media">
+        <img class="mr-3 mt-3" src="https://source.unsplash.com/random/120x160" alt="don`t load">
+        <div class="media-body">
+            <h5>The Gamepad SpeedLink </h5>
+            <p>The Gamepad SpeedLink been create in 2014 year in U.S.A state: california</p>
+        </div>
+    </div>
+    <div class="media">
+        <img class="mr-1 mt-5 mb-5" src="https://source.unsplash.com/random/120x160" alt="don`t load">
+        <div class="media-body">
+                <h2>The Gamepad SpeedLink </h2>
+                <p>The Gamepad SpeedLink been create in 2014 year in U.S.A state: california</p>
+        </div>
+    </div>
+    <div class="media">
+        <img class="mr-3 mt-3 mb-5 pr-5" src="f1.png">
+        <div class="media-body">
+            <h1>Formula One</h1>
+            <p>Formula One (also known as Formula 1 or F1) is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA) and owned by the 
+                Formula One Group. The FIA Formula One World Championship has been one of the premier forms of racing around the world since its 
+                inaugural season in 1950. The word "formula" in the name refers to the set of rules to which all participants' 
+                cars must conform.[1] A Formula One season consists of a series of races, known as Grands Prix (French for 'grand prizes' or 'great prizes'), which take place worldwide on purpose-built circuits and on public roads.
+
+                    The results of each race are evaluated using a points system to determine two annual World Championships: 
+                    one for drivers, the other for constructors. Drivers must hold valid Super Licences, the highest class of racing licence issued by the FIA.[2] The races must run on tracks graded "1" (formerly "A"), 
+                    the highest grade-rating issued by the FIA.[2] Most events occur in rural locations on purpose-built tracks, but several events take place on city streets.</p>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------->
+<br><br>
+<div class="jumbotron">
+        <h1 class="display-4">Formula One</h1>
+        <p class="lead">Formula One (also known as Formula 1 or F1) is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA) and owned by the 
+            Formula One Group. The FIA Formula One World Championship has been one of the premier forms of racing around the world since its 
+            inaugural season in 1950. The word "formula" in the name refers to the set of rules to which all participants' 
+            cars must conform.[1] A Formula One season consists of a series of races, known as Grands Prix (French for 'grand prizes' or 'great prizes'), which take place worldwide on purpose-built circuits and on public roads.
+
+                The results of each race are evaluated using a points system to determine two annual World Championships: 
+                one for drivers, the other for constructors. Drivers must hold valid Super Licences, the highest class of racing licence issued by the FIA.[2] The races must run on tracks graded "1" (formerly "A"), 
+                the highest grade-rating issued by the FIA.[2] Most events occur in rural locations on purpose-built tracks, but several events take place on city streets.</p>
+                <a class="btn-lg btn-primary" href="#" role="button">Press me!</a>
+</div>
+<div class="form-group">
+    <input type="email" placeholder="write you`re email" class="form-control">
+</div>
+    </div><!--End of container-->
+    
+<!--Carousel-->
+<div class="container">
+<div id="slide1" class="carousel-slide mb-5" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item">
+    <img src="https://source.unsplash.com/wgq4eit198Q/700x400" alt="First slide">
+</div>
+<div class="carousel-item">
+    <img src="https://source.unsplash.com/wgq4eit198Q/700x400" alt="Second slide">
+</div>
+<div class="carousel-item">
+    <img src="https://source.unsplash.com/wgq4eit198Q/700x400" alt="Three slide">
+</div>
+</div>
+
+</div>
+</div>      <!-- End of container-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
+
+    $('#slider4').on('slide.bs.carousel', function () {
+      console.log('SLIDE!');
+    });
+
+    $('#slider4').on('slid.bs.carousel', function () {
+      console.log('SLID!');
+    });
+
+  </script>
+</body>
+</html>

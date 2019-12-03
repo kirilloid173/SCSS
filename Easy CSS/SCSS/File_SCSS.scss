@@ -1,0 +1,10 @@
+$fontsize:32px;
+$backcolor:black;
+$borders:4px solid red;
+$colors:green;
+.second{
+  border: $borders;
+  background-color: $backcolor;
+  font-size: $fontsize;
+  color: $colors;
+}
