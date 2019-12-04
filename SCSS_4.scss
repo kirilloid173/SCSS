@@ -1,0 +1,40 @@
+%inline-type {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: -4px;
+    vertical-align: top;
+  }
+  
+  %for-grids {
+      min-height: 1px;
+      position: relative;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 20px;
+  }
+  
+  .sgrid-N {
+      @extend %for-grids;
+  }
+  
+
+  @mixin data_link($color,$hover,$active) {
+    a{
+        color: purple;
+  font-size: 32px;
+  font: bold;  
+    &:color{
+          color:$color;
+      }
+      &:hover{
+          color:$hover;
+      }
+      &:active{
+          color: $active;
+      }
+      a{
+          @include data_link(black,blue,green );
+      }
+  }
+}
